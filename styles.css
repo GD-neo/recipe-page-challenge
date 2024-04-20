@@ -1,0 +1,388 @@
+:root { 
+    --primarynutmeg: hsl(14, 45%, 36%);
+    --darkraspberry: hsl(332, 51%, 32%);
+
+    --neutralwhite: hsl(0, 0%, 100%); 
+    --neutralrosewhite: hsl(330, 100%, 98%);
+    --neutraleggshell: hsl(30, 54%, 90%);
+    --neutrallightgrey: hsl(30, 18%, 87%);
+    --neutralwengebrown: hsl(30, 10%, 34%);
+    --neutraldarkcharcoal: hsl(24, 5%, 18%);
+}
+
+* { 
+    padding: 0; 
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Young Serif';
+}
+
+main{ 
+    background-color: var(--neutraleggshell);
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.recipe-card { 
+    background-color: var(--neutralrosewhite);
+    width: 734px;
+    min-height: 400px;
+    margin-top: 123px;
+    margin-bottom: 123px;
+    border-radius: 20px;
+}
+
+.image-container { 
+    max-width: 100%;
+    margin: 40px 40px 0px 40px;
+    overflow: hidden;
+    border-radius: 1em;
+}
+
+.image-container img { 
+    max-width: 100%;
+}
+
+.recipe-text { 
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 27px 40px 27px 40px;
+}
+
+.recipe-text h1 { 
+    font-weight: 400;
+    font-size: 40px;
+    color: var(--neutraldarkcharcoal);
+}
+
+.recipe-text h2.ingredients-header { 
+    font-weight: 400;
+    font-size: 28px;
+    margin-top: 56px;
+    color: var(--primarynutmeg);
+}
+
+.recipe-text p { 
+    font-size: 16px;
+    color: var(--neutralwengebrown);
+    font-family: 'Outfit';
+    margin-top: 15px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.recipe-text h3 { 
+    color: var(--darkraspberry);
+    font-family: 'Outfit';
+    font-weight: 600;
+    margin: 57px 0px 0px 25px;
+    font-size: 20px;
+}
+
+.recipe-text ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: 'Outfit';
+    height: 84px;
+    margin-top: 16px;
+    list-style-type: disc;
+    list-style-position: outside;
+    margin-left: 60px;
+}
+
+
+.recipe-text strong { 
+    font-family: 'Outfit';
+    font-weight: 600;
+    color: var(--neutralwengebrown);
+}
+
+.recipe-text ul li.prep-time { 
+    font-family: 'Outfit';
+    font-weight: 400;
+    /* Use Padding on the list items to increase the distance between the bullet points and the text */
+    padding-left: 20px;
+    /* margin-left: 40px; */
+    color: var(--neutralwengebrown);
+}
+.recipe-text li::marker {
+    color: var(--darkraspberry);
+    font-size: 16px;
+    /* margin-right: 40px; */
+}
+.recipe-text ul.ingredients {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: 'Outfit';
+    height: 148px;
+    margin-top: 20px;
+    /* list-style-type: disc; */
+    list-style-position: outside;
+    margin-left: 1.5em;
+}
+.recipe-text ul li.ingredients-items { 
+    font-family: 'Outfit';
+    font-weight: 400;
+    /* Use Padding on the list items to increase the distance between the bullet points and the text */
+    padding-left: 20px;
+    /* margin-left: 40px; */
+    color: var(--neutralwengebrown);
+    list-style-type: square;
+}
+.recipe-text ul li.ingredients-items::marker { 
+    font-family: 'Outfit';
+    font-size: 12px;
+    font-weight: 400;
+    /* Use Padding on the list items to increase the distance between the bullet points and the text */
+    padding-left: 20px;
+    /* margin-left: 40px; */
+    color: var(--primarynutmeg);
+}
+
+.divider-line { 
+    width: 100%;
+    height: 1px;
+    background-color: var(--neutrallightgrey);
+    margin: 34px 0px 26px 0px;
+    position: relative;
+}
+
+.recipe-text h2.instructions-header { 
+    font-weight: 400;
+    font-size: 28px;
+    margin-top: 0px;
+    color: var(--primarynutmeg);
+}
+.recipe-text ol.instructions { 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: 'Outfit';
+    margin-left: 1.5em;
+    font-weight: 400;
+    margin-top: 20px;
+    height: 275px;
+    font-size: 16px;
+}
+
+.recipe-text ol li.instructions-items {
+    font-family: 'Outfit';
+    font-weight: 400;
+    /* Use Padding on the list items to increase the distance between the bullet points and the text */
+    padding-left: 18px;
+    /* margin-left: 40px; */
+    color: var(--neutralwengebrown);
+}
+
+.recipe-text ol li.instructions-items::marker{
+    color: var(--primarynutmeg);
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.recipe-text h2.nutrition-header { 
+    font-weight: 400;
+    font-size: 28px;
+    /* line-height: 1; */
+    margin-top: 0px;
+    margin-bottom: 3px;
+    color: var(--primarynutmeg);
+}
+
+p { 
+    font-size: 16px;
+    font-family: 'Outfit';
+
+}
+table, th, td { 
+    width: 100%;
+    font-family: 'Outfit';
+    text-align: left;
+    border-collapse: collapse;
+}
+table { 
+    margin-top: 11px;
+}
+th {
+    font-weight: 400;
+    width: 50%;
+    padding-left: 31px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    color: var(--neutralwengebrown);
+}
+
+td { 
+    font-weight: 700;
+    color: var(--primarynutmeg);
+    padding-left: 8px;
+}
+tr { 
+    border-bottom: 1px solid var(--neutrallightgrey);
+
+}
+table tr:nth-last-child(-n+1){
+    border-bottom: none;
+}
+
+footer { 
+    display: flex;
+    justify-content: center;
+    background-color: var(--neutraleggshell);
+    /* display: none; */
+}
+.attribution, .attribution a{ 
+    font-family: 'Outfit';
+    font-weight: 600;
+    color: var(--primarynutmeg);
+    text-decoration: none;
+    background-color: var(--neutraleggshell);
+    text-align: center;
+}
+
+@media (max-width: 760px){
+    .recipe-card { 
+        background-color: var(--neutralrosewhite);
+        width: 100%;
+        min-height: 400px;
+        margin-top: 0px;
+        margin-bottom: 123px;
+        border-radius: 20px;
+    }
+    .image-container { 
+        max-width: 100%;
+        margin: 0px 0px 0px 0px;
+        overflow: hidden;
+        border-radius: 0px;
+    }
+    .recipe-text ol.instructions { 
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        font-family: 'Outfit';
+        margin-left: 1.5em;
+        font-weight: 400;
+        margin-top: 20px;
+        height: 300px;
+        font-size: 16px;
+    }
+    
+    .recipe-text ol li.instructions-items {
+        font-family: 'Outfit';
+        font-weight: 400;
+        /* Use Padding on the list items to increase the distance between the bullet points and the text */
+        padding-left: 18px;
+        /* margin-left: 40px; */
+        color: var(--neutralwengebrown);
+    }
+    
+    .recipe-text ol li.instructions-items::marker{
+        color: var(--primarynutmeg);
+        font-weight: 600;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 540px){
+    .recipe-text h1 { 
+        font-weight: 400;
+        font-size: 30px;
+        color: var(--neutraldarkcharcoal);
+    }
+    .recipe-card { 
+        background-color: var(--neutralrosewhite);
+        width: 100%;
+        min-height: 400px;
+        margin-top: 0px;
+        margin-bottom: 123px;
+        border-radius: 20px;
+    }
+    .image-container { 
+        max-width: 100%;
+        margin: 0px 0px 0px 0px;
+        overflow: hidden;
+        border-radius: 0px;
+    }
+    .recipe-text ol.instructions { 
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        font-family: 'Outfit';
+        margin-left: 1.5em;
+        font-weight: 400;
+        margin-top: 20px;
+        height: 350px;
+        font-size: 16px;
+    }
+    
+    .recipe-text ol li.instructions-items {
+        font-family: 'Outfit';
+        font-weight: 400;
+        /* Use Padding on the list items to increase the distance between the bullet points and the text */
+        padding-left: 18px;
+        /* margin-left: 40px; */
+        color: var(--neutralwengebrown);
+    }
+    
+    .recipe-text ol li.instructions-items::marker{
+        color: var(--primarynutmeg);
+        font-weight: 600;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 500px) { 
+    .recipe-text ol.instructions { 
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        font-family: 'Outfit';
+        margin-left: 1.5em;
+        font-weight: 400;
+        margin-top: 20px;
+        height: 375px;
+        font-size: 16px;
+    }
+    
+    .recipe-text ol li.instructions-items {
+        font-family: 'Outfit';
+        font-weight: 400;
+        /* Use Padding on the list items to increase the distance between the bullet points and the text */
+        padding-left: 18px;
+        /* margin-left: 40px; */
+        color: var(--neutralwengebrown);
+    }
+    
+    .recipe-text ol li.instructions-items::marker{
+        color: var(--primarynutmeg);
+        font-weight: 600;
+        font-size: 16px;
+    }
+}
+@media (max-width: 450px){ 
+    .recipe-text ol.instructions { 
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        font-family: 'Outfit';
+        margin-left: 1.5em;
+        font-weight: 400;
+        margin-top: 20px;
+        height: auto;
+        font-size: 16px;
+    }
+}
+@media (max-width: 350px){
+    .recipe-text h1 { 
+        font-weight: 400;
+        font-size: 28px;
+        color: var(--neutraldarkcharcoal);
+    }
+}
+
+
